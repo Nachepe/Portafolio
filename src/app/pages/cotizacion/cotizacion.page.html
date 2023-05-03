@@ -1,0 +1,93 @@
+<ion-content> 
+  <div id="wrap">
+  <ion-header>
+    <header>
+      <div class="logo"> <img src="../../../assets/img/logo-con-letras.png"></div>
+      <div class="navig">
+        <ul class="">
+          <li><a routerLink="/home">Inicio</a></li>
+          <li><a routerLink="/quienes-somos">Quiénes somos</a></li>
+          <li><a routerLink="/nuestros-trabajos">Nuestro trabajos</a></li>
+          <li><a routerLink="/catalogo">Catálogo</a></li>
+          <li><a routerLink="/registro">Registrate</a></li>
+          <li><a routerLink="/iniciar-sesion">Ingresar</a></li>
+        </ul>
+      </div>
+      <div class="haztucotizacion" routerLink="/catalogo"><a>Haz tú cotización</a></div>
+  
+     <div class="menu-responsive">
+     </div>
+  
+  </header>
+  </ion-header>
+
+<div class="detalle-producto">
+    <h1>Genera tú cotización</h1>       
+      <section>
+         <ul id="detalle-producto">             
+             
+                <li>
+                  <img src="../../../assets/img/ventana-aluminio.png">
+                </li>
+                <li>
+                  <h3>Ventana Aluminio</h3>
+                  <form>
+                    <label>Tamaño de ventana:</label>
+                    <input type="number" placeholder="Largo" id="largo">
+                    <input type="number" placeholder="Ancho" id="ancho">
+                
+                    <label>Tipo de material:</label>
+                    <select id="material">
+                      <option value="Aluminio">Aluminio</option>
+                      <option value="PVC">PVC</option>
+                      <option value="Madera">Madera</option>
+                    </select>
+                
+                    <label>Tipo de vidrio:</label>
+                    <select id="vidrio">
+                      <option value="Simple">Simple</option>
+                      <option value="Doble">Doble</option>
+                      <option value="Triple">Triple</option>
+                    </select>
+                
+                    <label>Cantidad de ventanas:</label>
+                    <input type="number" id="cantidad" value="1">
+                    
+                    <div class="checkbox-container">
+                      
+                      <input type="checkbox" id="instalacion">
+                      <label>¿Incluir instalación?</label>
+                    </div>              
+                  
+                
+                    <button type="submit" class="color-boton-verde">Ver más Ventanas</button>
+                    <button type="submit" class="color-boton-azul">Agregar al pedido</button>
+                </form>
+                </li>                
+            </ul>
+        </section>
+    
+</div><!---cierre detalle producto-->
+<footer>
+
+  <div class="footer-izq">
+
+    <img src="../../../assets/img/logo-footer.png">
+    <div class="parrafo-footer" ><p>Con 2 años de experiencia fabricando ventanas de la mejor calidad.</p></div>
+    <div class="faq" ><img src="../../../assets/img/faq.png"><a routerLink="/preguntas-frecuentes">Preguntas Frecuentes</a></div>
+
+  </div>
+  <div class="v-line"></div>
+
+  <div class="footer-der">
+    <h4>Contáctanos</h4>
+    <ul>
+      <li><img src="../../../assets/img/whatsapp.png">+56 965789532</li>
+      <li><img src="../../../assets/img/correo.png"> <a class="btn-mail" routerLink="/contacto">Contáctanos</a></li>
+    </ul>
+  </div>
+  <div class="footer-centro"><p>Derechos Reservados Ventanas Técnicas 2023 ©</p></div>
+ </footer> 
+ </div><!-----CIERRE WRAP----->
+  </ion-content>
+  

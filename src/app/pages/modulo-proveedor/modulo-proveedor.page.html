@@ -1,0 +1,104 @@
+
+<ion-content>
+  <div id="wrap">
+    <ion-header>
+      <div id="intranet">
+        <ul>
+          <li >Cerrar Sesion</li>
+          <li><img src="../../../assets/img/logout.png"></li>
+        </ul>
+        <div class="logo-intranet"> <img src="../../../assets/img/logo-footer.png"></div>
+        
+      </div>
+    </ion-header>
+
+    <div id="menu-lateral">
+      <nav>
+        <ul>
+          <li><a routerLink="/modulo-catalogo">Módulo Catálogo</a></li>
+          <li><a routerLink="/modulo-cotizacion">Módulo Cotización</a></li>
+          <li><a routerLink="/modulo-credencial">Módulo Credencial</a></li>
+          <li><a routerLink="/modulo-empresa">Módulo Empresa</a></li>
+          <li><a routerLink="/modulo-mano-obra">Módulo Mano Obra</a></li>
+          <li><a routerLink="/modulo-material">Módulo Material</a></li>
+          <li><a routerLink="/modulo-proveedor">Módulo Proveedor</a></li>
+          <li><a routerLink="/modulo-reporte">Módulo Reporte</a></li>
+          <li><a routerLink="/modulo-transporte">Módulo Transporte</a></li>
+        </ul>
+      </nav>
+
+
+    </div><!-----CIERRE MENU LATERAL------>
+
+  <div class="modulo-contenido">
+    <h1>Módulo Proveedor</h1>
+
+    <button class="btn-agre">AGREGAR NUEVO</button>
+    <div class="buscador">
+      <input type="text" id="input-buscar" placeholder="Buscar Empresa...">
+      <button id="btn-buscar">BUSCAR</button>
+    </div>
+    <table class="tabla-contenido">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre Empresa</th>
+          <th>Correo</th>
+          <th>Teléfono</th>
+          <th>Dirección</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Materiales SPA</td>
+          <td>SpaVentana@gmail.com</td>
+          <td>+56995588484</td>
+          <td>Av.Providencia</td>
+          <td>
+            <button class="btn-editar">MODIFICAR</button>
+            <button class="btn-borrar">BORRAR</button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Materiales Construcciones</td>
+          <td>ContructoraSPA@gmail.com</td>
+          <td>+56993747292</td>
+          <td>Av.Renca</td>
+          <td>
+            <button class="btn-editar">MODIFICAR</button>
+            <button class="btn-borrar">BORRAR</button>
+          </td>
+        </tr>
+        
+      </tbody>
+    </table>
+    
+
+  </div><!---CIERRE MODULO CONTENIDO-->
+
+  <footer>
+
+    <div class="footer-izq">
+  
+      <img src="../../../assets/img/logo-footer.png">
+      <div class="parrafo-footer" ><p>Con 2 años de experiencia fabricando ventanas de la mejor calidad.</p></div>
+      <div class="faq" ><img src="../../../assets/img/faq.png"><a routerLink="/preguntas-frecuentes">Preguntas Frecuentes</a></div>
+  
+    </div>
+    <div class="v-line"></div>
+  
+    <div class="footer-der">
+      <h4>Contáctanos</h4>
+      <ul>
+        <li><img src="../../../assets/img/whatsapp.png">+56 965789532</li>
+        <li><img src="../../../assets/img/correo.png"> <a class="btn-mail" routerLink="/contacto">Contáctanos</a></li>
+      </ul>
+    </div>
+    <div class="footer-centro"><p>Derechos Reservados Ventanas Técnicas 2023 ©</p></div>
+   </footer> 
+   </div><!------CIERRE WRAP-->
+  </ion-content>
+
