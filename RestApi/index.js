@@ -19,6 +19,7 @@ app.use(passport.initialize());
 
 app.use('/auth',require('./routes/auth'));
 app.use('/users',require('./routes/users'));
+app.use('/empresas',require('./routes/empresas'));
 
 app.listen(port,()=>{
         console.log(`Servidor corriendo en puerto ${port} ...`);
@@ -29,4 +30,4 @@ app.listen(port,()=>{
 db.sequelize
 .sync({force: false})
 .then(() => console.log('conectado a la BD'))
-.catch((e) => console.log(`eRROR => ${e}`));
+.catch((e) => console.log(`Error => ${e}`));
